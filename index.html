@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+    <style>
+        body { margin: 0; background: ; } 
+video { 
+position: fixed; 
+top: 50%; 
+left: 50%; 
+min-width: 100%; 
+min-height: 100%; 
+width: auto; 
+height: auto; 
+z-index: -100; 
+-webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); 
+background: url(' http://cdn.simplesite.com/i/1b/b4/286541533684216859/i286541539346271735._szw1280h1280_.jpg ') no-repeat; background-size: cover; -webkit-transition: 1s opacity; transition: 1s opacity; } .stopfade { opacity: .5; } 
+#weld { 
+font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif; font-weight:100; 
+background: rgba(0,0,0,0.3); color: white; 
+padding: 2rem; 
+width: 33%; 
+margin:2rem; 
+float: right; 
+font-size: 1.2rem; } h1 { font-size: 3rem; 
+text-transform: uppercase; margin-top: 0; 
+letter-spacing: .3rem; } 
+#weld button { 
+display: block; 
+width: 80%; 
+padding: .4rem; 
+border: none; 
+margin: 1rem auto; 
+font-size: 1.3rem; background: rgba(255,255,255,0.23); color: #fff; 
+border-radius: 3px; 
+cursor: pointer; 
+-webkit-transition: .3s background; transition: .3s background; } 
+#weld button:hover { background: rgba(0,0,0,0.5); } a { display: inline-block; color: #fff; text-decoration: none; background:rgba(0,0,0,0.5); padding: .5rem; -webkit-transition: .6s background; transition: .6s background; } a:hover{ background:rgba(0,0,0,0.9); } @media screen and (max-width: 500px) { div{width:70%;} } @media screen and (max-device-width: 800px) 
+{ 
+html { 
+background: url( http://cdn.simplesite.com/i/1b/b4/286541533684216859/i286541539345576494._szw1280h1280_.jpg )  no-repeat center center fixed; } 
+#myvideo { display: no@ne; }
+}
+    </style>
+    <script>
+        var vid = document.getElementById("bgvid"); var pauseButton = document.querySelector("#weld button"); if (window.matchMedia('(prefers-reduced-motion)').matches) { vid.removeAttribute("autoplay"); vid.pause(); pauseButton.innerHTML = "Paused"; } function vidFade() { vid.classList.add("stopfade"); } vid.addEventListener('ended', function() 
+if (vid.paused) { vid.play(); pauseButton.innerHTML = "Pause"; } else { vid.pause(); pauseButton.innerHTML = "Paused"; } })    </script>
+        <video id="myvideo" poster=" https://archive.org/download/weldabmetal/weldabmetal.thumbs/weldabmetal_000005.jpg "controls  playsinline autoplay loop src=" https://archive.org/download/weldabmetal/weldabmetal.mp4 ">
+        </video>
+             <div id="weld">
+         <h1>Weldabmetal</h1> <p>about weldabmetal <p><a href= http://weldabmetal.simplesite.com/>My WebSite</a>
+            
+        
+        <button>PLAY</button>
+        <button>PUSE</button>
+</div>
+    </body>
+</html>
